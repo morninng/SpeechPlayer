@@ -1,13 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  host_url: MyString
-  description: MyString
-  subtitle_context_array: 
-  subtitle_time_array: 
+1:
+  host_url: /assets/Audio/BanDisplaySacrilegiousArts.m4a
+  description: THW ban the display of sacrilegious arts
+  subtitle_context_array: Thank you Mr. Speaker.# We say that just because something is offensive, that doesn’t necessarily mean that that thing should be banned for only that reason.# We believe that even if it offends someone or something to some certain extent, that thing could be allowed in some circumstances.# As the opposition, we would like to protect the freedom of speech and right to religion of people, and tell you why fundamentally these sacrilegious arts are not as harmful or detrimental to the society, as the Government side has described in their paradigm today.# Today I will be talking about three things.#  First, I’ll be clarifying to what extent freedom of speech can be justified.# Second, I will tell you why these sacrilegious arts do more good than harm to the society as a whole.# Thirdly, I will be comparing both sides paradigm.# Before that, several points of rebuttal towards the previous speaker.# The Prime Minister came up here and basically talked about 2 things.# First, she said that it offends other religions greatly in a brutal manner.# Second, she said that it discourages people’s religious activities.# We say that both analyses coming from the Gov is a complete failure.# First, just because it offends some other religions, that doesn’t mean that we can oppress certain action.# We would like to differentiate how visual graphics and art has a different impact compared to verbal oppression and offense, such as hate speech,  which will further be extended in my substantive.# But, secondly, we hereby heard no linkage between how the existence of sacrilegious arts actually directly affect people so as to discourage their religious activities.# Therefore, their case fails.# So, now let me move on to my substantives. First
+  subtitle_time_array: 0,2,8,16,31,34,40,47,50,53,56,62,65,69,75,86,97,99
 
-two:
-  host_url: MyString
-  description: MyString
-  subtitle_context_array: 
-  subtitle_time_array: 
+2:
+  host_url: /assets/Audio/Speech.mp3
+  description: Winston Churchil speech
+  subtitle_context_array: Good Afternoon Winston chuchil across the line,american wismenster# Winston churchil were semaster during the client american gatherl# Landing first you would like visible firsst german destroy# Expanding right serapoij sssigned three hours# in a landing class send across hour work through gieneral stafff commandar# and discuss landing across through the as a first board woul# Good Afternoon Winston chuchil across the line# american wismenster# Winston churchil were semaster during the client american gatherl#Landing first you would like visible firsst german destroy# Expanding right serapoij sssigned three hours# in a landing class send across hour work through gieneral stafff commandar# and discuss landing across through the as a first board woul
+  subtitle_time_array: 0,5,10,15,20,25,45,48,50,55,70,80
+

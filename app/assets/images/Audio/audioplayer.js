@@ -70,6 +70,7 @@ SpeechPlayer.prototype.onTimeUpdate = function(){
         self.stat.current_sentence = n-1;
         current_span_id = "sentence_" + String(self.stat.current_sentence);
         document.getElementById(current_span_id).style.color = "red";
+　　　　　　　　flipsnap.moveToPoint(speech_frame[n-1]);
       }
   }
 }

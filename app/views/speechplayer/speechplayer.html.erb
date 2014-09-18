@@ -3,34 +3,59 @@
 <!-- <audio src= "<%= @Audio_URL %>" controls></audio> -->
 <br>
 
-
-<% i=0 %> 
-<% @SpeechContextArray.each do |speech_context| %>
- <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : <%= speech_context %></span><br>
- <% i+=1 %> 
-<% end %>
-
-
-
-
-<br><br>
-
-  <div id="audio_player" host_url =  "<%= @Audio_URL %>" ></div>
 <script type="text/javascript">
-
-var speech_time_array = [];
-<% i=0 %> 
-<% @SpeechTimeArray.each do |speech_time| %>
- speech_time_array[<%= i %>]= <%= speech_time %>;
- <% i+=1 %> 
-<% end %>
-
-
+     var speech_frame=[];
 </script>
+<% i=0 %> 
+<% j=0 %>
+<% length=0 %>
 
+<div id="SpeechContext">
+ <div class="viewport">
+
+
+
+  <div class="flipsnap">
+   <div class="item"> 
+      <% @SpeechContextArray.each do |speech_context| %>  
+        <span id =sentence_<%= i %> > <small><%= @SpeechTimeArray[i] %></small> : <%= speech_context %></span>
+        <script type="text/javascript">
+        　　　speech_frame[<%= i %>]=[<%= j %>]
+        </script>
+        <% length = length + speech_context.length %>
+        <% if length > 600 %>
+           </div><div class="item">
+           <% j += 1 %>
+           <% length=0 %>
+        <% end %>
+        <% i+=1 %>
+     <% end %>
+   </div>
+ </div>
+ <div align="center" id="audio_player" host_url =  "<%= @Audio_URL %>" ></div>
+
+ <script type="text/javascript">
+   var flipsnap = Flipsnap('.flipsnap');
+ </script>
+
+
+ <script type="text/javascript">
+ var speech_time_array = [];
+ <% i=0 %> 
+  <% @SpeechTimeArray.each do |speech_time| %> 
+   speech_time_array[<%= i %>]= <%= speech_time %>;
+   <% i+=1 %> 
+  <% end %>
+ </script>
  <script src="/assets/Audio/audioplayer.js"></script>
-  Audio play time = <span id="audio_time">play time</span><br>
-  number of sentenc = <span id="sentence_id">sentenceid</span>
+
+
+  <p>Audio play time = <span id="audio_time"></span></p>
+  <p>number of sentenc = <span id="sentence_id"></span></p>
+
+
+ </div>
+</div>
 
 
 
